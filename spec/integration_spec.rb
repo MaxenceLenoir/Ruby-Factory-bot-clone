@@ -1,5 +1,7 @@
+require 'pry'
+
 RSpec.describe TinyFactory do
-  prepend TinyFactory::Syntax::Methods
+  include TinyFactory::Syntax::Methods
 
   it "has a version number" do
     expect(TinyFactory::VERSION).not_to be nil
